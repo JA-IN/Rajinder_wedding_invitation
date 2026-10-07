@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #6e1f2f;
+  --color-secondary: #faf5eb;
+  --color-accent: #c9a227;
+  --color-accent-gold: #ffd76a;
+  --color-dark-gold: #b78c3b;
+  --color-text: #2f2f2f;
+  --color-bg-gradient: linear-gradient(135deg, #faf5eb 0%, #f5efe0 100%);
+  --font-heading: "Cinzel", serif;
+  --font-names: "Great Vibes", cursive;
+  --font-body: "Cormorant Garamond", serif;
+  --font-script: "Great Vibes", "Parisienne", cursive;
+  --border-gold: 1px solid rgba(201, 162, 39, 0.3);
+  --shadow-elegant: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --radius-md: 8px;
+}
+
+@theme {
+  --font-heading: "Cinzel", serif;
+  --font-names: "Great Vibes", cursive;
+  --font-body: "Cormorant Garamond", serif;
+  --font-script: "Great Vibes", "Parisienne", cursive;
+  --font-sans: "Montserrat", sans-serif;
+
+  --color-primary: #6e1f2f;
+  --color-secondary: #faf5eb;
+  --color-accent: #c9a227;
+  --color-text: #2f2f2f;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-secondary);
+  background-image: var(--color-bg-gradient);
+  background-attachment: fixed;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes haptic-bounce {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 5px rgba(201, 162, 39, 0.4));
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 20px #c9a227) drop-shadow(0 0 30px rgba(201, 162, 39, 0.6));
+    transform: translateY(10px);
+  }
+}
+
+@keyframes shimmer-line {
+  0% { left: -50px; }
+  100% { left: 100%; }
+}
+
+@keyframes pulse-text {
+  0%, 100% {
+    opacity: 0.6;
+    text-shadow: 0 0 5px rgba(183, 140, 59, 0.2);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(183, 140, 59, 0.6);
+  }
+}
+
+@keyframes breathing-text {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+@keyframes breathing-logo {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+.animate-haptic-bounce {
+  animation: haptic-bounce 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-breathing-text {
+  animation: breathing-text 2.8s ease-in-out infinite;
+}
+
+.animate-breathing-logo {
+  animation: breathing-logo 2.8s ease-in-out infinite;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-names {
+  font-family: var(--font-names);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.border-gold {
+  border: var(--border-gold);
+}
+
+.shadow-elegant {
+  box-shadow: var(--shadow-elegant);
+}
+
+.gold-foil-text {
+  background: linear-gradient(135deg, #ffd76a 0%, #c9a227 45%, #b78c3b 75%, #ffd76a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
