@@ -4,15 +4,15 @@ export const coupleDetails = {
   groom: {
     name: 'Surinder Singh Purba',
     shortName: 'Surinder',
-    father: 'S. Balwinder Singh Purba',
-    mother: 'Sdm. Tarsem Kaur',
+    father: 'Late S. Balwinder Singh Purba',
+    mother: 'Late Sdm. Tarsem Kaur',
     family: 'Purba Family',
   },
   bride: {
     name: 'Harpreet Kaur Bedi',
     shortName: 'Harpreet',
-    father: 'S. Shingara Singh Bedi',
-    mother: 'Sdm. Kulvir Kaur',
+    father: 'Late S. Shingara Singh Bedi',
+    mother: 'Late Sdm. Kulvir Kaur',
     family: 'Bedi Family',
   },
   weddingDate: '22 November 2026',
@@ -46,9 +46,9 @@ export const weddingEvents: WeddingEvent[] = [
     badge: 'Auspicious Beginning',
   },
   {
-    id: 'haldi-maiyan',
-    title: 'Haldi & Maiyan Ceremony',
-    punjabiTitle: 'ਹਲਦੀ ਅਤੇ ਮਾਈਆਂ',
+    id: 'haldi-mehndi',
+    title: 'Haldi & Mehndi Ceremony',
+    punjabiTitle: 'ਹਲਦੀ ਅਤੇ ਮੇਹਂਡੀ',
     date: '21 November 2026',
     day: 'Saturday',
     time: '4:00 PM Onwards',
@@ -173,8 +173,3 @@ export const initialGuestBlessings: GuestBlessing[] = [
   },
 ];
 
-export const couplePhotos = {
-  left: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAIW-w41rUpo8GSyHs1DGIVgISiOeEFMJwAgljrY5QEgikovvppyYvNOA9CzO6T6UnDowfp3lcOdI73skSPJpGV0hHZzsNMd8eFa9BpLkBks3D8GY23aEzfn94pyGdxsJJOCBjIftYnFMwzE8jxxNirhSR3mpvuv9TIuNh79ZJbvG4Ef-I2X69fDFCqpe7hCpvE7ag_lWQcCEDLHJoAPCln5CioHEBidiNde_Y3Cbw',
-  right: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA1ax_M4lhIv6wyqkr92igjMQwol-gmQfeZaXNjcJKH2Vm7UUviOnez5jXaSjEUXkEhgE0eRguWgfNrIiCPIJ9CoD_Nrt-i49cBXYhoprsQ-NrOfrK0TYPuJ_haQhV7uMCVuhdxCwQCrYigBjNkbB2ZRGn8SbZcrP1ZiHtUJK-NThztUk03zfw96VE2N8WjJmZXTCnnkum484eIvzIvxnRVqLFRHGWWQ8cs3q2_VE4',
-  center: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBXEg2v84DAWXrC8g_aOboFPtPwfnn1-MzGFi2m6HpgypPtT9KMx_i49HkRYSM3bZPLKw2DDbX6N7o9PObY54zqTxGPuqod5Y-_EonqzuTRBK89I5eZVkQ82xxCAr9NgZ0u28qJI2RKvyy3FZpIK42u21_KdCKTCQl_RYXjbZ5Ubdmrp8PW_q6hELoUXfxdmtA4hOep-NYi7nWtUrN84BYGCOCJrg3aYV_N_zd8Rpw',
-};

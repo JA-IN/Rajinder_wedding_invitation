@@ -1,45 +1,63 @@
-import React from 'react';
-import { couplePhotos, coupleDetails } from '../data/weddingData';
+import React, { useState } from 'react';
+import leftCouplePhoto from '../assets/images/couple/1790929960172.jpg (1).jpeg';
+import rightCouplePhoto from '../assets/images/couple/1790930370008.jpg.jpeg';
+import featuredCouplePhoto from '../assets/images/couple/1790930276435.jpg.jpeg';
+
+const storyPhotos = [
+  {
+    src: leftCouplePhoto,
+    alt: 'Surinder and Harpreet sharing a joyful moment',
+  },
+  {
+    src: featuredCouplePhoto,
+    alt: 'Surinder and Harpreet together',
+  },
+  {
+    src: rightCouplePhoto,
+    alt: 'Surinder and Harpreet seated together outdoors',
+  },
+];
 
 export const OurStorySection: React.FC = () => {
+  const [photos, setPhotos] = useState(storyPhotos);
+
+  const rotatePhotos = (side: 'left' | 'right') => {
+    setPhotos((currentPhotos) =>
+      side === 'left'
+        ? [currentPhotos[2], currentPhotos[0], currentPhotos[1]]
+        : [currentPhotos[1], currentPhotos[2], currentPhotos[0]],
+    );
+  };
+
   return (
     <section className="py-16 sm:py-24 px-4 max-w-6xl mx-auto" data-purpose="our-story" id="our-story">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
         {/* Left Photo Collage Montage */}
         <div className="lg:col-span-6 flex justify-center items-center relative">
-          <div className="relative w-full max-w-md h-[460px] flex items-center justify-center">
-            {/* Background Left Frame (Offset -3deg) */}
-            <div className="absolute left-0 w-48 sm:w-56 h-72 sm:h-80 rounded-2xl overflow-hidden shadow-lg border-2 border-white -rotate-3 z-10 transition-transform duration-500 hover:-rotate-1">
-              <img
-                alt="Surinder and Harpreet joyful moment"
-                className="w-full h-full object-cover"
-                src={couplePhotos.left}
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
-            </div>
+          <div className="story-photo-stack">
+            {photos.map((photo, index) => {
+              const position = index === 1 ? 'center' : index === 0 ? 'left' : 'right';
+              const isFeatured = position === 'center';
 
-            {/* Background Right Frame (Offset +3deg) */}
-            <div className="absolute right-0 w-48 sm:w-56 h-72 sm:h-80 rounded-2xl overflow-hidden shadow-lg border-2 border-white rotate-3 z-10 transition-transform duration-500 hover:rotate-1">
-              <img
-                alt="Surinder and Harpreet portrait"
-                className="w-full h-full object-cover"
-                src={couplePhotos.right}
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-
-            {/* Center Raised Highlight Frame */}
-            <div className="relative z-20 w-56 sm:w-64 h-88 sm:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-[#c9a227]/40 group">
-              <img
-                alt="Surinder and Harpreet together"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src={couplePhotos.center}
-                loading="lazy"
-                referrerPolicy="no-referrer"
-              />
-            </div>
+              return (
+                <button
+                  key={photo.src}
+                  type="button"
+                  className={`story-photo-frame story-photo-frame--${position}${isFeatured ? ' is-featured' : ''}`}
+                  onClick={isFeatured ? undefined : () => rotatePhotos(position)}
+                  disabled={isFeatured}
+                  aria-label={isFeatured ? 'Featured couple photo' : `Move couple photo to center`}
+                  aria-pressed={isFeatured}
+                >
+                  <img
+                    alt={photo.alt}
+                    className="h-full w-full object-cover"
+                    src={photo.src}
+                    loading="lazy"
+                  />
+                </button>
+              );
+            })}
           </div>
         </div>
 

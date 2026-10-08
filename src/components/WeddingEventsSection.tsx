@@ -2,6 +2,18 @@ import React from 'react';
 import { weddingEvents } from '../data/weddingData';
 import { MapPin } from 'lucide-react';
 import { TravelFlightPath } from './TravelFlightPath';
+import haldiPhoto from '../assets/images/couple/Golden Haldi Celebration with Two Couples.png';
+import sukhmaniPhoto from '../assets/images/couple/Sukhmani Sahib Ceremony in Bloom (1).png';
+import anandKarajPhoto from '../assets/images/couple/A Grand Sikh Wedding Ceremony.png';
+import royalReceptionPhoto from '../assets/images/couple/1790930296416.jpg.jpeg';
+import jaggoPhoto from '../assets/images/couple/Punjabi Jago Night Celebration.png';
+const eventImageOverrides: Record<string, string> = {
+  'haldi-mehndi': haldiPhoto,
+  'sukhmani-path': sukhmaniPhoto,
+  'jaggo-party': jaggoPhoto,
+  'anand-karaj': anandKarajPhoto,
+  'royal-reception': royalReceptionPhoto,
+};
 
 export const WeddingEventsSection: React.FC = () => {
   return (
@@ -46,7 +58,7 @@ export const WeddingEventsSection: React.FC = () => {
                   <img
                     alt={`${event.title} celebration`}
                     className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
-                    src={event.imageUrl}
+                    src={eventImageOverrides[event.id] ?? event.imageUrl}
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />

@@ -11,6 +11,7 @@ import { ScratchCardSection } from './components/ScratchCardSection';
 import { CountdownSection } from './components/CountdownSection';
 import { OurStorySection } from './components/OurStorySection';
 import { WeddingEventsSection } from './components/WeddingEventsSection';
+import { CoupleGallerySection } from './components/CoupleGallerySection';
 import { FamilyBlessingsSection } from './components/FamilyBlessingsSection';
 import { RSVPSection } from './components/RSVPSection';
 import { ThankYouFooter } from './components/ThankYouFooter';
@@ -21,9 +22,24 @@ export default function App() {
 
   useEffect(() => {
     const sections = Array.from(
-      document.querySelectorAll<HTMLElement>('main > section:not(#hero)'),
+      document.querySelectorAll<HTMLElement>(
+        'main > section:not(#hero), footer[data-purpose="wedding-footer"]',
+      ),
     );
-    sections.forEach((section) => section.classList.add('scroll-reveal'));
+    sections.forEach((section) => {
+      section.classList.add('scroll-reveal');
+
+      Array.from(section.children).forEach((child, index) => {
+        if (!(child instanceof HTMLElement) || child.classList.contains('scratch-ambient')) return;
+        child.classList.add('scroll-reveal-item');
+        child.style.setProperty('--reveal-delay', `${index * 90}ms`);
+      });
+
+      section.querySelectorAll<HTMLElement>('[data-purpose^="event-card-"]').forEach((card, index) => {
+        card.classList.add('scroll-reveal-item');
+        card.style.setProperty('--reveal-delay', `${index * 110}ms`);
+      });
+    });
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       sections.forEach((section) => section.classList.add('is-visible'));
@@ -73,10 +89,13 @@ export default function App() {
         {/* 7. Wedding Events & Animated Travel Flight Path */}
         <WeddingEventsSection />
 
-        {/* 8. With Blessings From (Family Details) */}
+        {/* 8. Couple Photo Gallery */}
+        <CoupleGallerySection />
+
+        {/* 9. With Blessings From (Family Details) */}
         <FamilyBlessingsSection />
 
-        {/* 9. RSVP Card */}
+        {/* 10. RSVP Card */}
         <RSVPSection />
       </main>
 
