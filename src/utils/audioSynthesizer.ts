@@ -1,8 +1,5 @@
-/**
- * High-fidelity Web Audio API synthesizer for the iconic Punjabi Wedding
- * melody (Raatan Lambiyan / Din Shagna Da) with authentic Shehnai timbre,
- * Tanpura acoustic drone, and soft bells.
- */
+/** Plays the uploaded wedding music track through the shared audio controls. */
+import weddingTrack from '../assets/images/raataan-lambiyan-shershaah-128-kbps_56F1BDrF_f4ukt3.mp3';
 
 class WeddingAudioPlayer {
   private ctx: AudioContext | null = null;
@@ -54,6 +51,17 @@ class WeddingAudioPlayer {
   ];
 
   private currentNoteIndex = 0;
+  private audio: HTMLAudioElement | null = null;
+
+  private getAudio(): HTMLAudioElement {
+    if (!this.audio) {
+      this.audio = new Audio(weddingTrack);
+      this.audio.loop = true;
+      this.audio.volume = this.volume;
+    }
+
+    return this.audio;
+  }
 
   private initContext() {
     if (!this.ctx) {
@@ -72,6 +80,7 @@ class WeddingAudioPlayer {
 
   public setVolume(vol: number) {
     this.volume = Math.max(0, Math.min(1, vol));
+    if (this.audio) this.audio.volume = this.volume;
     if (this.masterGain && this.ctx) {
       this.masterGain.gain.setTargetAtTime(this.volume, this.ctx.currentTime, 0.05);
     }
@@ -161,16 +170,17 @@ class WeddingAudioPlayer {
   }
 
   public play(): boolean {
-    this.initContext();
     if (this.isPlaying) return true;
     this.isPlaying = true;
-    this.startTanpuraDrone();
-    this.playNextNote();
+    void this.getAudio().play().catch(() => {
+      this.isPlaying = false;
+    });
     return true;
   }
 
   public pause(): void {
     this.isPlaying = false;
+    this.audio?.pause();
     if (this.timer) {
       clearTimeout(this.timer);
       this.timer = null;
@@ -188,7 +198,7 @@ class WeddingAudioPlayer {
   }
 
   public getIsPlaying(): boolean {
-    return this.isPlaying;
+    return this.audio ? !this.audio.paused && !this.audio.ended : false;
   }
 }
 
