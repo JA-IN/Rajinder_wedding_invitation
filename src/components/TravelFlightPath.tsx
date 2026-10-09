@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plane } from 'lucide-react';
+import { coupleDetails } from '../data/weddingData';
 
 export const TravelFlightPath: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const TravelFlightPath: React.FC = () => {
           <span className="text-3xl sm:text-4xl filter drop-shadow">🏛️</span>
         </div>
         <span className="font-heading text-xs tracking-[0.3em] uppercase text-[#6e1f2f] font-bold mt-2">
-          Mandi Dabwali
+          {coupleDetails.primaryLocation}
         </span>
       </div>
 

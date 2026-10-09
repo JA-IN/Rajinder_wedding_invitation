@@ -118,7 +118,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenRsvp }) => {
           <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-[#faf5eb] font-heading text-sm sm:text-base tracking-[0.25em] uppercase">
             <span>22 NOVEMBER 2026</span>
             <span className="hidden sm:inline text-[#ffd76a]">•</span>
-            <span>BATHINDA &amp; PATHRALA, PUNJAB</span>
+            <span>Mandi Dabwali</span>
           </div>
 
           {/* Action Button */}

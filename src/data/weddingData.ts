@@ -17,7 +17,7 @@ export const coupleDetails = {
   },
   weddingDate: '22 November 2026',
   targetIsoDate: '2026-11-22T09:00:00+05:30',
-  primaryLocation: 'Bathinda & Pathrala, Punjab',
+  primaryLocation: 'Mandi Dabwali',
   hostContact: {
     name: 'Rajinder Purba',
     phone: '8360045011',
@@ -134,14 +134,14 @@ export const familyBlessings: FamilyBlessing[] = [
     role: 'Sister & Jiju',
     names: 'Amandeep Kaur & Gurpreet Singh',
     relationText: 'Loving Sister & Brother-in-Law',
-    note: 'ਜਦੋਂ ਸਾਡਾ ਪਿਆਰਾ ਭਰਾ ਇਸ ਸੁੰਦਰ ਅਧਿਆਇ ਵਿੱਚ ਪਹੁੰਚਦਾ ਹੈ, ਤਾਂ ਸਾਨੂੰ ਗਰਵ ਅਤੇ ਸ਼ੁੱਧ ਖੁਸ਼ੀ ਨਾਲ ਭਰਿਆ ਮਹਿਸੂਸ ਹੁੰਦਾ ਹੈ। ਅਰਦਾਸ ਹੈ ਕਿ ਤੁਹਾਡੇ ਘਰ ਵਿੱਚ ਹਮੇਸ਼ਾਂ ਮੁਸਕਾਨਾਂ ਅਤੇ ਵਾਹਿਗੁਰੂ ਦੀ ਕ੍ਰਿਪਾ ਵਧਦੀ ਰਹੇ।',
+    note: 'ਸਾਡੇ ਵੀਰ ਦੀ ਜ਼ਿੰਦਗੀ ਦੇ ਇਸ ਨਵੇਂ ਤੇ ਸੋਹਣੇ ਸਫ਼ਰ ਲਈ ਦਿਲੋਂ ਬਹੁਤ-ਬਹੁਤ ਵਧਾਈਆਂ! ❤️ ਵਾਹਿਗੁਰੂ ਜੀ ਹਮੇਸ਼ਾ ਤੁਹਾਡੇ ਘਰ ਵਿੱਚ ਖੁਸ਼ੀਆਂ, ਪਿਆਰ ਤੇ ਹਾਸੇ-ਖੇੜੇ ਬਣਾਈ ਰੱਖਣ। ਤੁਹਾਡੀ ਜੋੜੀ ਸਦਾ ਸਲਾਮਤ ਰਹੇ ਤੇ ਵਾਹਿਗੁਰੂ ਜੀ ਆਪਣੀ ਮਿਹਰ ਭਰਿਆ ਹੱਥ ਹਮੇਸ਼ਾ ਤੁਹਾਡੇ ਸਿਰ ’ਤੇ ਰੱਖਣ। 🙏🏻💐',
     iconType: 'sister',
   },
   {
     role: 'Nieces & Nephew',
     names: 'Ekam, Sonavjot, Girisha',
     relationText: 'Cherished Nieces & Nephew',
-    note: 'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 👶🏻💕\nਸਾਡਾ ਚਾਚੂ-ਮਾਮੂ ਜੀ ਦਾ ਵਿਆਹ ਹੋ ਰਿਹਾ ਹੈ,\nਤੁਸੀਂ ਜ਼ਰੂਰ ਆਉਣਾ ਜੀ!\nਵਾਹੇਗੁਰੂ ਦੀ ਅਰਥਨਾ ਹੈ ਕਿ ਤੁਹਾਨੂੰ ਹਮੇਸ਼ਾਂ ਖੁਸ਼ੀਆਂ ਅਤੇ ਭਲਿਆਣ ਦੇ ਨਾਲ ਬਸਿਆ ਰਹੇ।',
+    note: 'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 👶🏻💕\nਸਾਡਾ ਚਾਚੂ-ਮਾਮੂ ਜੀ ਦਾ ਵਿਆਹ ਹੋ ਰਿਹਾ ਹੈ,\nਤੁਸੀਂ ਜ਼ਰੂਰ ਆਉਣਾ ਜੀ!',
     iconType: 'kids',
   },
 ];

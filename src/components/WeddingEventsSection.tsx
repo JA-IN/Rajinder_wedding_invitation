@@ -3,7 +3,7 @@ import { weddingEvents } from '../data/weddingData';
 import { MapPin } from 'lucide-react';
 import { TravelFlightPath } from './TravelFlightPath';
 import haldiPhoto from '../assets/images/couple/Golden Haldi Celebration with Two Couples.png';
-import sukhmaniPhoto from '../assets/images/couple/Sukhmani Sahib Ceremony in Bloom (1).png';
+import sukhmaniPhoto from '../assets/images/couple/Devotional Sikh Ceremony in Golden Light.png';
 import anandKarajPhoto from '../assets/images/couple/A Grand Sikh Wedding Ceremony.png';
 import royalReceptionPhoto from '../assets/images/couple/1790930296416.jpg.jpeg';
 import jaggoPhoto from '../assets/images/couple/Punjabi Jago Night Celebration.png';

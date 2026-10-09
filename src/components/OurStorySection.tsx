@@ -68,19 +68,19 @@ export const OurStorySection: React.FC = () => {
           </h2>
 
           <p className="font-serif text-lg sm:text-xl text-stone-700 leading-relaxed">
-            Our story did not begin with years of knowing each other. It began with two Punjabis finding each other at exactly the right time.
+            ਸਾਡੀ ਕਹਾਣੀ ਦੀ ਸ਼ੁਰੂਆਤ ਸਾਲਾਂ ਦੀ ਜਾਣ-ਪਛਾਣ ਨਾਲ ਨਹੀਂ ਹੋਈ, ਸਗੋਂ ਦੋ ਪੰਜਾਬੀਆਂ ਦੇ ਮਿਲਣ ਨਾਲ ਹੋਈ, ਜੋ ਜ਼ਿੰਦਗੀ ਦੇ ਬਿਲਕੁਲ ਸਹੀ ਸਮੇਂ ਇੱਕ-ਦੂਜੇ ਨੂੰ ਮਿਲੇ।
           </p>
 
           <p className="font-serif text-lg sm:text-xl text-stone-700 leading-relaxed">
-            From the very beginning, we found comfort in the quiet moments, joy in the unexpected ones, and a shared love for family roots and simple laughter.
+            ਸ਼ੁਰੂ ਤੋਂ ਹੀ ਅਸੀਂ ਇੱਕ-ਦੂਜੇ ਦੇ ਨਾਲ ਬਿਤਾਏ ਸ਼ਾਂਤ ਪਲਾਂ ਵਿੱਚ ਸਕੂਨ, ਅਣਕਿਆਸੇ ਪਲਾਂ ਵਿੱਚ ਖੁਸ਼ੀਆਂ ਅਤੇ ਆਪਣੇ ਪਰਿਵਾਰਕ ਵਿਰਸੇ ਤੇ ਸਾਦੇ ਜਿਹੇ ਹਾਸੇ-ਮਜ਼ਾਕ ਵਿੱਚ ਇੱਕ ਸਾਂਝ ਲੱਭੀ।
           </p>
 
           <p className="font-serif text-lg sm:text-xl text-stone-700 leading-relaxed">
-            With the sacred blessings of our elders and the divine grace of Waheguru Ji, our families united our paths into one lifelong journey of companionship.
+            ਸਾਡੇ ਵੱਡਿਆਂ ਦੇ ਪਵਿੱਤਰ ਆਸ਼ੀਰਵਾਦ ਅਤੇ ਵਾਹਿਗੁਰੂ ਜੀ ਦੀ ਅਪਾਰ ਕਿਰਪਾ ਸਦਕਾ, ਸਾਡੇ ਪਰਿਵਾਰਾਂ ਨੇ ਸਾਡੇ ਰਾਹਾਂ ਨੂੰ ਇੱਕ ਕਰ ਦਿੱਤਾ ਅਤੇ ਸਾਨੂੰ ਉਮਰ ਭਰ ਦੇ ਸਾਥ ਦੇ ਇਸ ਸੁਹਣੇ ਸਫ਼ਰ ਨਾਲ ਜੋੜ ਦਿੱਤਾ।
           </p>
 
           <p className="font-serif text-lg sm:text-xl text-stone-700 leading-relaxed font-medium text-[#6e1f2f]">
-            As we begin this new chapter together, we feel incredibly grateful to have found in each other a best friend, a partner, and a true adventure companion.
+            ਜ਼ਿੰਦਗੀ ਦੇ ਇਸ ਨਵੇਂ ਅਧਿਆਇ ਦੀ ਸ਼ੁਰੂਆਤ ਕਰਦਿਆਂ, ਅਸੀਂ ਦਿਲੋਂ ਸ਼ੁਕਰਗੁਜ਼ਾਰ ਹਾਂ ਕਿ ਸਾਨੂੰ ਇੱਕ-ਦੂਜੇ ਵਿੱਚ ਆਪਣਾ ਸਭ ਤੋਂ ਚੰਗਾ ਦੋਸਤ, ਜੀਵਨ ਸਾਥੀ ਅਤੇ ਹਰ ਨਵੇਂ ਰੋਮਾਂਚਕ ਸਫ਼ਰ ਵਿੱਚ ਸਾਥ ਨਿਭਾਉਣ ਵਾਲਾ ਹਮਸਫ਼ਰ ਮਿਲਿਆ ਹੈ। ❤
           </p>
         </div>
       </div>

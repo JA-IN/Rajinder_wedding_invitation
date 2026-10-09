@@ -147,7 +147,7 @@ export const RoyalGateEntrance: React.FC<RoyalGateEntranceProps> = ({ onOpened }
 
         {/* Wedding Date */}
         <p className="font-heading text-xs sm:text-sm tracking-[0.3em] uppercase text-[#ffd76a] font-semibold mt-2">
-          22 NOVEMBER 2026 • BATHINDA &amp; PATHRALA, PUNJAB
+          22 NOVEMBER 2026 • Mandi Dabwali 
         </p>
 
         {/* Scroll Down Indicator matching the video */}
