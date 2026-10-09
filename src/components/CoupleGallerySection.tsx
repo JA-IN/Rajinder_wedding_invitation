@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 import photo02 from '../assets/images/couple/IMG_7975.JPG.jpeg';
 import photo03 from '../assets/images/couple/IMG_7978.JPG.jpeg';
@@ -23,8 +22,6 @@ export const CoupleGallerySection: React.FC = () => {
   const galleryRef = useRef<HTMLDivElement | null>(null);
   const slideRefs = useRef<Array<HTMLElement | null>>([]);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null);
-  const swipeStartXRef = useRef<number | null>(null);
 
   useEffect(() => {
     const setViewportHeight = () => {
@@ -79,25 +76,6 @@ export const CoupleGallerySection: React.FC = () => {
   }, [activeIndex]);
 
   useEffect(() => {
-    if (selectedPhotoIndex === null) return;
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setSelectedPhotoIndex(null);
-      if (event.key === 'ArrowLeft') setSelectedPhotoIndex((current) => current === null ? null : (current - 1 + galleryPhotos.length) % galleryPhotos.length);
-      if (event.key === 'ArrowRight') setSelectedPhotoIndex((current) => current === null ? null : (current + 1) % galleryPhotos.length);
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [selectedPhotoIndex]);
-
-  useEffect(() => {
     const handleKeyScroll = (event: KeyboardEvent) => {
       if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp' && event.key !== 'PageDown' && event.key !== 'PageUp') return;
       const delta = event.key === 'ArrowDown' || event.key === 'PageDown' ? 1 : -1;
@@ -109,12 +87,6 @@ export const CoupleGallerySection: React.FC = () => {
     window.addEventListener('keydown', handleKeyScroll);
     return () => window.removeEventListener('keydown', handleKeyScroll);
   }, [activeIndex]);
-
-  const movePhoto = (direction: -1 | 1) => {
-    setSelectedPhotoIndex((current) =>
-      current === null ? current : (current + direction + galleryPhotos.length) % galleryPhotos.length,
-    );
-  };
 
   return (
     <section className="cinematic-gallery" id="couple-gallery" data-purpose="couple-gallery">
@@ -129,7 +101,6 @@ export const CoupleGallerySection: React.FC = () => {
             className={`cinematic-gallery__slide ${index === 0 ? 'is-visible' : ''}`}
             data-index={index}
             ref={(element) => { slideRefs.current[index] = element; }}
-            onClick={() => setSelectedPhotoIndex(index)}
           >
             <img
               src={photo.src}
@@ -146,63 +117,6 @@ export const CoupleGallerySection: React.FC = () => {
         ))}
       </div>
 
-      {selectedPhotoIndex !== null && (
-        <div
-          className="cinematic-gallery__lightbox"
-          role="dialog"
-          aria-modal="true"
-          aria-label={`Photo ${selectedPhotoIndex + 1} of ${galleryPhotos.length}`}
-          onClick={(event) => {
-            if (event.target === event.currentTarget) setSelectedPhotoIndex(null);
-          }}
-        >
-          <button
-            className="cinematic-gallery__control cinematic-gallery__close"
-            type="button"
-            onClick={() => setSelectedPhotoIndex(null)}
-            aria-label="Close photo viewer"
-            autoFocus
-          >
-            <X aria-hidden="true" />
-          </button>
-
-          <button
-            className="cinematic-gallery__control cinematic-gallery__previous"
-            type="button"
-            onClick={() => movePhoto(-1)}
-            aria-label="Previous photo"
-          >
-            <ChevronLeft aria-hidden="true" />
-          </button>
-
-          <figure className="cinematic-gallery__viewer">
-            <img
-              src={galleryPhotos[selectedPhotoIndex].src}
-              alt={galleryPhotos[selectedPhotoIndex].alt}
-              onPointerDown={(event) => { swipeStartXRef.current = event.clientX; }}
-              onPointerUp={(event) => {
-                const startX = swipeStartXRef.current;
-                swipeStartXRef.current = null;
-                if (startX === null) return;
-                const distance = event.clientX - startX;
-                if (Math.abs(distance) > 55) movePhoto(distance > 0 ? -1 : 1);
-              }}
-              onPointerCancel={() => { swipeStartXRef.current = null; }}
-              draggable={false}
-            />
-            <figcaption>{selectedPhotoIndex + 1} / {galleryPhotos.length}</figcaption>
-          </figure>
-
-          <button
-            className="cinematic-gallery__control cinematic-gallery__next"
-            type="button"
-            onClick={() => movePhoto(1)}
-            aria-label="Next photo"
-          >
-            <ChevronRight aria-hidden="true" />
-          </button>
-        </div>
-      )}
     </section>
   );
 };

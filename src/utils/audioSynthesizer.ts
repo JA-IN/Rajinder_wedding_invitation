@@ -1,5 +1,5 @@
 /** Plays the uploaded wedding music track through the shared audio controls. */
-import weddingTrack from '../assets/images/raataan-lambiyan-shershaah-128-kbps_56F1BDrF_f4ukt3.mp3';
+import weddingTrack from '../assets/images/DAS MEREYA DILBARA Sofia Inder Jashan Inder New Punjabi Song 2023.mp3';
 
 class WeddingAudioPlayer {
   private ctx: AudioContext | null = null;
