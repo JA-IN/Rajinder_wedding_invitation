@@ -31,9 +31,9 @@ export const SacredInvitation: React.FC = () => {
 
         {/* Gurmukhi Mangal Verses */}
         <div className="font-serif text-sm sm:text-base text-[#6e1f2f] mb-6 leading-relaxed">
-          <p>ਲਖ ਖੁਸੀਆ ਪਾਤਿਸਾਹੀਆ ਜੇ ਸਤਿਗੁਰੁ ਨਦਰਿ ਕਰੇਇ ॥</p>
+          <p>ਧੰਨੁ ਸੁ ਵੇਲਾ ਜਿਤੁ ਦਰਸਨੁ ਕਰਣਾ ॥</p>
           <p className="text-xs sm:text-sm text-stone-500 font-sans tracking-wide mt-1">
-            Lakh Khushian Patshaiyan Je Satgur Nadar Kare
+            Blessed is the moment when one beholds the Divine.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export const SacredInvitation: React.FC = () => {
               Surinder Singh
             </h3>
             <p className="font-serif italic text-base sm:text-lg text-[#c9a227] font-medium">
-              Son of Sdm. Tarsem Kaur &amp; S. Balwinder Singh Purba
+            Late S. Balwinder Singh Purba &amp;  Son of Sdm. Tarsem Kaur  
             </p>
           </div>
 

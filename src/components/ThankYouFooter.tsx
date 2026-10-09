@@ -1,6 +1,6 @@
 import React from 'react';
 import { coupleDetails } from '../data/weddingData';
-import { Instagram, Globe, Heart } from 'lucide-react';
+import { Instagram, MessageCircle, Heart } from 'lucide-react';
 
 export const ThankYouFooter: React.FC = () => {
   return (
@@ -30,18 +30,12 @@ export const ThankYouFooter: React.FC = () => {
             </p>
           </div>
 
-          <div className="space-y-1">
-            <p className="font-bold text-sm tracking-[0.2em] text-[#faf5eb]">
-              S. Shingara Singh
-            </p>
-            <p className="text-[11px] text-[#ffd76a] tracking-widest font-sans">
-              (Bride's Family)
-            </p>
-          </div>
-
           <div className="space-y-1 sm:col-span-2 md:col-span-1">
             <p className="font-bold text-sm tracking-[0.2em] text-[#faf5eb]">
               Rajinder Purba
+            </p>
+            <p className="text-[11px] text-[#ffd76a] tracking-widest font-sans">
+              (Groom's Big Brother)
             </p>
             <a
               href={`tel:${coupleDetails.hostContact.phone}`}
@@ -60,28 +54,41 @@ export const ThankYouFooter: React.FC = () => {
           </p>
         </div>
 
-        {/* Social Icons */}
-        <div className="flex justify-center items-center gap-5 text-[#ffd76a] pt-2">
-          <a
-            href="#hero"
-            aria-label="Instagram"
-            className="hover:text-white transition-colors p-1"
-          >
-            <Instagram className="w-5 h-5" />
-          </a>
-          <a
-            href="#hero"
-            aria-label="Wedding website"
-            className="hover:text-white transition-colors p-1"
-          >
-            <Globe className="w-5 h-5" />
-          </a>
+        <div className="mx-auto max-w-2xl border-y border-[#ffd76a]/30 py-6">
+          <p className="font-heading text-sm font-semibold tracking-[0.2em] uppercase text-[#ffd76a]">
+            Want a wedding website like this?
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            <a
+              href={`https://wa.me/917717312782?text=${encodeURIComponent('Hi, I would like to enquire about a website.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Message us on WhatsApp at +91 77173 12782"
+              className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-[#ffd76a]/60 px-4 py-2 font-sans text-sm text-[#ffd76a] transition-colors hover:bg-[#ffd76a]/10 hover:text-white"
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden="true" />
+              WhatsApp: +91 77173 12782
+            </a>
+            <a
+              href="https://www.instagram.com/toon_craft34/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DM us on Instagram at toon_craft34"
+              className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-[#ffd76a]/60 px-4 py-2 font-sans text-sm text-[#ffd76a] transition-colors hover:bg-[#ffd76a]/10 hover:text-white"
+            >
+              <Instagram className="h-5 w-5" aria-hidden="true" />
+              DM @toon_craft34
+            </a>
+          </div>
         </div>
 
         {/* Made with love */}
         <div className="border-t border-[#8b273b] pt-6 max-w-xs mx-auto">
           <p className="text-xs font-serif text-[#faf5eb]/70 flex items-center justify-center gap-1.5">
             Made with <Heart className="w-3.5 h-3.5 text-rose-300 fill-current" /> for Surinder &amp; Harpreet
+          </p>
+          <p className="text-[10px] font-sans text-[#faf5eb]/50 tracking-widest mt-1">
+            Designed and Developed By Harshil Jain
           </p>
         </div>
       </div>

@@ -5,14 +5,14 @@ export const coupleDetails = {
     name: 'Surinder Singh Purba',
     shortName: 'Surinder',
     father: 'Late S. Balwinder Singh Purba',
-    mother: 'Late Sdm. Tarsem Kaur',
+    mother: 'Sdm. Tarsem Kaur',
     family: 'Purba Family',
   },
   bride: {
     name: 'Harpreet Kaur Bedi',
     shortName: 'Harpreet',
-    father: 'Late S. Shingara Singh Bedi',
-    mother: 'Late Sdm. Kulvir Kaur',
+    father: 'S. Shingara Singh Bedi',
+    mother: 'Sdm. Kulvir Kaur',
     family: 'Bedi Family',
   },
   weddingDate: '22 November 2026',
@@ -35,14 +35,14 @@ export const weddingEvents: WeddingEvent[] = [
     date: '21 November 2026',
     day: 'Saturday',
     time: 'Morning 9:00 AM – 11:00 AM',
-    venueName: 'Purba Residence & Gurudwara Sahib',
-    venueAddress: 'Pathrala, District Bathinda, Punjab',
+    venueName: 'Purba Residence',
+    venueAddress: 'Mandi Dabwali',
     description:
       'Commencing the auspicious wedding celebrations by seeking the divine blessings of Almighty Waheguru Ji through sacred Gurbani recitation.',
     dressCode: 'Traditional Punjabi Attire / Head Covered with Rumal or Dupatta',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAc5zV-GN2bUeqWzDQILGOyNzvaJorRrru_ToKBNQo-2RCx1q27g4oBEPRaA_49ZAe1NPgyhiWtvA9xGfzyxJl8R30zybeIUgtKYEcpII-ZRqgMtl7fYnLlKQzmtd0j5ETeU9n8uIDGHbWftuK9oflHeFmqfbB_LBTQkMg7Gv2Nc-_5ac5543k8xs2cx5oeNTYCD1jAFGhxi60Jm8oGxNvH7YJLQqrX95FGDoUHyhU',
-    mapQuery: 'Pathrala, Bathinda, Punjab',
+    mapQuery: 'https://www.google.com/maps/place/29%C2%B058\'04.8%22N+74%C2%B041\'34.5%22E/@29.9679928,74.6903496,17z/data=!3m1!4b1!4m4!3m3!8m2!3d29.9679928!4d74.6929245?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D',
     badge: 'Auspicious Beginning',
   },
   {
@@ -52,14 +52,14 @@ export const weddingEvents: WeddingEvent[] = [
     date: '21 November 2026',
     day: 'Saturday',
     time: '4:00 PM Onwards',
-    venueName: 'Purba House Courtyard',
-    venueAddress: 'Pathrala, District Bathinda, Punjab',
+    venueName: 'Purba Residence',
+    venueAddress: 'Mandi Dabwali',
     description:
       'The traditional Punjabi Maiyan and Haldi ritual with turmeric paste, mustard oil, and colorful rangoli, celebrated amidst joyous folk boliyan and family songs.',
     dressCode: 'Sunshine Yellow, Mustard & Festive Ethnic Wear',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaqC18XMHxNe-zXcGP3rxFUBkM1I_xutJzxQXljxStZdDnmzXZs7NA0PYRMzf91S6Ds-VxrvvJhKosz0XBQOBP_M3jIgZL-zyj7lgYQ7pEIR-di1gDihvMbyKZpJfeqKYh64aLTK2x8I8euFL0hg0N7TSrEGLDUdigTaap0tGJT4Vm0AomqXCPimdCJU_zNojwKbgoQYYdQCZjN4FsnwWs5tqPV7oVZFVvM1bAOic',
-    mapQuery: 'Pathrala, Bathinda, Punjab',
+    mapQuery: 'https://www.google.com/maps/place/29%C2%B058\'04.8%22N+74%C2%B041\'34.5%22E/@29.9679928,74.6903496,17z/data=!3m1!4b1!4m4!3m3!8m2!3d29.9679928!4d74.6929245?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D',
     badge: 'Traditional Ritual',
   },
   {
@@ -81,7 +81,7 @@ export const weddingEvents: WeddingEvent[] = [
   },
   {
     id: 'anand-karaj',
-    title: 'Sacred Anand Karaj',
+    title: 'Anand Karaj',
     punjabiTitle: 'ਅਨੰਦ ਕਾਰਜ (ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਹਜ਼ੂਰੀ)',
     date: '22 November 2026',
     day: 'Sunday',
@@ -141,7 +141,7 @@ export const familyBlessings: FamilyBlessing[] = [
     role: 'Nieces & Nephew',
     names: 'Ekam, Sonavjot, Girisha',
     relationText: 'Cherished Nieces & Nephew',
-    note: 'Super excited to welcome our new Chachi / Mami ji! We cannot wait for the wedding sweets, fun dances, and endless celebrations!',
+    note: 'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 👶🏻💕\nਸਾਡੇ ਚਾਚੂ-ਮਾਮੂ ਦਾ ਵਿਆਹ ਹੈ ਜੀ!\nਤੁਸੀਂ ਜ਼ਰੂਰ ਆਉਣਾ,',
     iconType: 'kids',
   },
 ];

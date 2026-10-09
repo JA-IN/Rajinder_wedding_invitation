@@ -41,7 +41,13 @@ export const WeddingEventsSection: React.FC = () => {
                 data-purpose={`event-card-${event.id}`}
               >
                 {/* Event Title in Gold Script */}
-                <h3 className="font-names text-5xl sm:text-6xl text-[#c9a227] mb-3 leading-tight">
+                <h3
+                  className={
+                    event.id === 'anand-karaj'
+                      ? 'font-heading text-2xl sm:text-3xl md:text-[2.1rem] uppercase tracking-[0.22em] text-[#6e1f2f] mb-3 leading-tight'
+                      : 'font-names text-5xl sm:text-6xl text-[#c9a227] mb-3 leading-tight'
+                  }
+                >
                   {event.title}
                 </h3>
 
