@@ -392,6 +392,12 @@ html {
   .cinematic-gallery__slide {
     height: calc(var(--vh, 1vh) * 100);
   }
+
+  .cinematic-gallery__slide img {
+    object-fit: contain;
+    background: #0a0a0a;
+    object-position: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

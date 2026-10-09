@@ -42,7 +42,7 @@ export const weddingEvents: WeddingEvent[] = [
     dressCode: 'Traditional Punjabi Attire / Head Covered with Rumal or Dupatta',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAc5zV-GN2bUeqWzDQILGOyNzvaJorRrru_ToKBNQo-2RCx1q27g4oBEPRaA_49ZAe1NPgyhiWtvA9xGfzyxJl8R30zybeIUgtKYEcpII-ZRqgMtl7fYnLlKQzmtd0j5ETeU9n8uIDGHbWftuK9oflHeFmqfbB_LBTQkMg7Gv2Nc-_5ac5543k8xs2cx5oeNTYCD1jAFGhxi60Jm8oGxNvH7YJLQqrX95FGDoUHyhU',
-    mapQuery: 'https://www.google.com/maps/place/29%C2%B058\'04.8%22N+74%C2%B041\'34.5%22E/@29.9679928,74.6903496,17z/data=!3m1!4b1!4m4!3m3!8m2!3d29.9679928!4d74.6929245?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D',
+    mapQuery: 'https://www.google.com/maps?q=29%C2%B058%2704.8%22N%2074%C2%B041%2734.5%22E&z=17&hl=en',
     badge: 'Auspicious Beginning',
   },
   {
@@ -59,7 +59,7 @@ export const weddingEvents: WeddingEvent[] = [
     dressCode: 'Sunshine Yellow, Mustard & Festive Ethnic Wear',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaqC18XMHxNe-zXcGP3rxFUBkM1I_xutJzxQXljxStZdDnmzXZs7NA0PYRMzf91S6Ds-VxrvvJhKosz0XBQOBP_M3jIgZL-zyj7lgYQ7pEIR-di1gDihvMbyKZpJfeqKYh64aLTK2x8I8euFL0hg0N7TSrEGLDUdigTaap0tGJT4Vm0AomqXCPimdCJU_zNojwKbgoQYYdQCZjN4FsnwWs5tqPV7oVZFVvM1bAOic',
-    mapQuery: 'https://www.google.com/maps/place/29%C2%B058\'04.8%22N+74%C2%B041\'34.5%22E/@29.9679928,74.6903496,17z/data=!3m1!4b1!4m4!3m3!8m2!3d29.9679928!4d74.6929245?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D',
+    mapQuery: 'https://www.google.com/maps?q=29%C2%B058%2704.8%22N%2074%C2%B041%2734.5%22E&z=17&hl=en',
     badge: 'Traditional Ritual',
   },
   {
@@ -120,28 +120,28 @@ export const familyBlessings: FamilyBlessing[] = [
     role: 'Grand Parents',
     names: 'Late S. Hardev Singh Purba & Sdm. Surjit Kaur Purba',
     relationText: 'With divine blessings from the heavens & heartfelt love',
-    note: 'May Waheguru shower unlimited grace, longevity, prosperity, and love on Surinder and Harpreet as they embark on this sacred journey of two souls united in one spirit.',
+    note: 'ਵਾਹਿਗੁਰੂ ਜੀ ਦੀ ਅਰਦਾਸ ਹੈ ਕਿ ਸੁਰਿੰਦਰ ਅਤੇ ਹਰਪ੍ਰੀਤ ਨੂੰ ਅਸੀਮ ਕ੍ਰਿਪਾ, ਲੰਮਾ ਜੀਵਨ, ਅਰਾਮ-ਕ੍ਰਮ, ਧਨ-ਦੌਲਤ ਅਤੇ ਪ੍ਰੇਮ ਨਾਲ ਬਖਸ਼ੇ, ਜਿਵੇਂ ਉਹ ਇਸ ਪਵਿੱਤਰ ਯਾਤਰਾ ਵਿੱਚ ਦੋਹਾਂ ਜਾਨਾਂ ਨੂੰ ਇਕ ਰੂਹ ਵਿੱਚ ਮਿਲਾਉਣ ਲਈ ਅੱਗੇ ਵਧ ਰਹੇ ਹਨ।',
     iconType: 'grandparents',
   },
   {
     role: 'Bhabhi & Brother',
     names: 'Pooja & Rajinder Purba',
     relationText: 'Loving Brother & Bhabhi',
-    note: 'Welcome to our family, dearest Harpreet! Wishing our beloved brother Surinder and sweet bhabhi a lifetime of endless joy, laughter, mutual trust, and companionship.',
+    note: 'ਪਿਆਰੀ ਹਰਪ੍ਰੀਤ, ਸਾਡੀ ਪਰਿਵਾਰ ਵਿੱਚ ਸੁਆਗਤ ਹੈ! ਸਾਡੇ ਪਿਆਰੇ ਭਰਾ ਸੁਰਿੰਦਰ ਅਤੇ ਪਿਆਰੀ ਭਾਬੀ ਦੇ ਲਈ ਅਨੰਤ ਖੁਸ਼ੀਆਂ, ਹੱਸੀਆਂ, ਪਰਸਪਰ ਭਰੋਸੇ ਅਤੇ ਸਹਿਯੋਗ ਦੇ ਨਾਲ ਲੰਬੀ ਉਮਰਾਂ ਦੀ ਅਰਦਾਸ ਕਰਦੇ ਹਾਂ।',
     iconType: 'siblings',
   },
   {
     role: 'Sister & Jiju',
     names: 'Amandeep Kaur & Gurpreet Singh',
     relationText: 'Loving Sister & Brother-in-Law',
-    note: 'Watching our dearest brother step into this beautiful chapter fills our hearts with pride and pure bliss. May your home always overflow with smiles and Waheguru’s grace.',
+    note: 'ਜਦੋਂ ਸਾਡਾ ਪਿਆਰਾ ਭਰਾ ਇਸ ਸੁੰਦਰ ਅਧਿਆਇ ਵਿੱਚ ਪਹੁੰਚਦਾ ਹੈ, ਤਾਂ ਸਾਨੂੰ ਗਰਵ ਅਤੇ ਸ਼ੁੱਧ ਖੁਸ਼ੀ ਨਾਲ ਭਰਿਆ ਮਹਿਸੂਸ ਹੁੰਦਾ ਹੈ। ਅਰਦਾਸ ਹੈ ਕਿ ਤੁਹਾਡੇ ਘਰ ਵਿੱਚ ਹਮੇਸ਼ਾਂ ਮੁਸਕਾਨਾਂ ਅਤੇ ਵਾਹਿਗੁਰੂ ਦੀ ਕ੍ਰਿਪਾ ਵਧਦੀ ਰਹੇ।',
     iconType: 'sister',
   },
   {
     role: 'Nieces & Nephew',
     names: 'Ekam, Sonavjot, Girisha',
     relationText: 'Cherished Nieces & Nephew',
-    note: 'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 👶🏻💕\nਸਾਡੇ ਚਾਚੂ-ਮਾਮੂ ਦਾ ਵਿਆਹ ਹੈ ਜੀ!\nਤੁਸੀਂ ਜ਼ਰੂਰ ਆਉਣਾ,',
+    note: 'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ! 👶🏻💕\nਸਾਡਾ ਚਾਚੂ-ਮਾਮੂ ਜੀ ਦਾ ਵਿਆਹ ਹੋ ਰਿਹਾ ਹੈ,\nਤੁਸੀਂ ਜ਼ਰੂਰ ਆਉਣਾ ਜੀ!\nਵਾਹੇਗੁਰੂ ਦੀ ਅਰਥਨਾ ਹੈ ਕਿ ਤੁਹਾਨੂੰ ਹਮੇਸ਼ਾਂ ਖੁਸ਼ੀਆਂ ਅਤੇ ਭਲਿਆਣ ਦੇ ਨਾਲ ਬਸਿਆ ਰਹੇ।',
     iconType: 'kids',
   },
 ];

@@ -86,9 +86,7 @@ export const WeddingEventsSection: React.FC = () => {
                 {/* View on Maps Pill Button matching video */}
                 <div className="mt-6 flex justify-center">
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      `${event.venueName}, ${event.venueAddress}`
-                    )}`}
+                    href={event.mapQuery}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-[#c9a227]/50 text-[#c9a227] hover:bg-[#c9a227] hover:text-white transition-all text-xs font-heading tracking-[0.2em] uppercase font-semibold shadow-sm"

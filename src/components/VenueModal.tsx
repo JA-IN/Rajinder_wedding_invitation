@@ -57,9 +57,7 @@ export const VenueModal: React.FC<VenueModalProps> = ({ venue, onClose }) => {
 
         <div className="flex flex-col sm:flex-row gap-3 pt-2">
           <a
-            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              `${venue.name}, ${venue.address}`
-            )}`}
+            href={venue.mapQuery || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${venue.name}, ${venue.address}`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 py-3 bg-[#5A1020] hover:bg-[#721829] text-[#DFBA67] rounded-xl font-cinzel text-xs uppercase tracking-widest font-bold text-center flex items-center justify-center gap-2 shadow transition-colors"
