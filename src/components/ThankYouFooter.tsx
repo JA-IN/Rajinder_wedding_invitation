@@ -23,7 +23,7 @@ export const ThankYouFooter: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto font-heading text-xs tracking-wider uppercase">
           <div className="space-y-1">
             <p className="font-bold text-sm tracking-[0.2em] text-[#faf5eb]">
-              S. Balwinder Singh
+             Late S. Balwinder Singh
             </p>
             <p className="text-[11px] text-[#ffd76a] tracking-widest font-sans">
               (Groom's Family)
