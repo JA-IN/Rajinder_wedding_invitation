@@ -5,14 +5,14 @@ export const coupleDetails = {
     name: 'Surinder Singh Purba',
     shortName: 'Surinder',
     father: 'Late S. Balwinder Singh Purba',
-    mother: 'Sdm. Tarsem Kaur',
+    mother: 'Sdn. Tarsem Kaur',
     family: 'Purba Family',
   },
   bride: {
     name: 'Harpreet Kaur Bedi',
     shortName: 'Harpreet',
     father: 'S. Shingara Singh Bedi',
-    mother: 'Sdm. Kulvir Kaur',
+    mother: 'Sdn. Kulvir Kaur',
     family: 'Bedi Family',
   },
   weddingDate: '22 November 2026',
@@ -70,13 +70,13 @@ export const weddingEvents: WeddingEvent[] = [
     day: 'Saturday',
     time: '7:00 PM Onwards',
     venueName: 'Regal Food',
-    venueAddress: 'Regal Food, Main Road, Bathinda Region, Punjab',
+    venueAddress: 'Regal Food, Mandi Dabwali',
     description:
       'An electric night of Jaggo procession with brass lights, vigorous Bhangra and Giddha, live dhol beats, drinks, and a lavish celebratory dinner party at Regal Food.',
     dressCode: 'Indo-Western / Glamorous Shimmer & Festive Kurta-Pajama',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBcVl7wgRlFx9dGWEozQuaJ0_-wVF3i0nkhKmEmXo1itRXI095PSlkUM8PsT83XxxmZA7H5Ilgj2gsfLWtENLleCvoY6VE0nMcAMCCREuykrpHMVYnIFs3q0aTWLVTfYP4YOt80H135-5C3Z-kZ7Mb9lE0Z3feuKUBjpx3BDa6jZNWKUuSSgcb3EPTb1Msl93QrsYpLKFaS9LGjuTCrbwjf_q9qP8z694RvMTSvqnA',
-    mapQuery: 'Regal Food, Bathinda, Punjab',
+    mapQuery: 'Regal Food, Mandi Dabwali, Punjab',
     badge: 'Party & Dhol Beats',
   },
   {
@@ -118,7 +118,7 @@ export const weddingEvents: WeddingEvent[] = [
 export const familyBlessings: FamilyBlessing[] = [
   {
     role: 'Grand Parents',
-    names: 'Late S. Hardev Singh Purba & Sdm. Surjit Kaur Purba',
+    names: 'Late S. Hardev Singh Purba & Sdn. Surjit Kaur Purba',
     relationText: 'With divine blessings from the heavens & heartfelt love',
     note: 'ਵਾਹਿਗੁਰੂ ਜੀ ਦੀ ਅਰਦਾਸ ਹੈ ਕਿ ਸੁਰਿੰਦਰ ਅਤੇ ਹਰਪ੍ਰੀਤ ਨੂੰ ਅਸੀਮ ਕ੍ਰਿਪਾ, ਲੰਮਾ ਜੀਵਨ, ਅਰਾਮ-ਕ੍ਰਮ, ਧਨ-ਦੌਲਤ ਅਤੇ ਪ੍ਰੇਮ ਨਾਲ ਬਖਸ਼ੇ, ਜਿਵੇਂ ਉਹ ਇਸ ਪਵਿੱਤਰ ਯਾਤਰਾ ਵਿੱਚ ਦੋਹਾਂ ਜਾਨਾਂ ਨੂੰ ਇਕ ਰੂਹ ਵਿੱਚ ਮਿਲਾਉਣ ਲਈ ਅੱਗੇ ਵਧ ਰਹੇ ਹਨ।',
     iconType: 'grandparents',
@@ -127,7 +127,7 @@ export const familyBlessings: FamilyBlessing[] = [
     role: 'Bhabhi & Brother',
     names: 'Pooja & Rajinder Purba',
     relationText: 'Loving Brother & Bhabhi',
-    note: 'ਪਿਆਰੀ ਹਰਪ੍ਰੀਤ, ਸਾਡੀ ਪਰਿਵਾਰ ਵਿੱਚ ਸੁਆਗਤ ਹੈ! ਸਾਡੇ ਪਿਆਰੇ ਭਰਾ ਸੁਰਿੰਦਰ ਅਤੇ ਪਿਆਰੀ ਭਾਬੀ ਦੇ ਲਈ ਅਨੰਤ ਖੁਸ਼ੀਆਂ, ਹੱਸੀਆਂ, ਪਰਸਪਰ ਭਰੋਸੇ ਅਤੇ ਸਹਿਯੋਗ ਦੇ ਨਾਲ ਲੰਬੀ ਉਮਰਾਂ ਦੀ ਅਰਦਾਸ ਕਰਦੇ ਹਾਂ।',
+    note: 'ਪਿਆਰੀ ਹਰਪ੍ਰੀਤ  , ਸਾਡੇ ਪਰਿਵਾਰ ਵਿੱਚ ਤੁਹਾਡਾ ਦਿਲੋਂ ਸਵਾਗਤ ਹੈ! ਵਾਹਿਗੁਰੂ ਜੀ ਤੁਹਾਡੇ ਅਤੇ ਸਾਡੇ ਪਿਆਰੇ ਵੀਰ ਸੁਰਿੰਦਰ ਦੀ ਜੋੜੀ ਨੂੰ ਸਦਾ ਚੜ੍ਹਦੀ ਕਲਾ ਵਿੱਚ ਰੱਖਣ ਅਤੇ ਤੁਹਾਡੇ ਜੀਵਨ ਨੂੰ ਅਨੰਤ ਖੁਸ਼ੀਆਂ, ਪਿਆਰ ਤੇ ਅਸੀਸਾਂ ਨਾਲ ਭਰਪੂਰ ਰੱਖਣ।',
     iconType: 'siblings',
   },
   {

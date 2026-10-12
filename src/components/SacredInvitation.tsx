@@ -6,7 +6,7 @@ export const SacredInvitation: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
   const handleShare = () => {
-    const text = `🌸 Royal Sikh Wedding Invitation 🌸\n\nSurinder Singh Purba\n(Son of Sdm. Tarsem Kaur & S. Balwinder Singh Purba)\nWeds\nHarpreet Kaur Bedi\n(Daughter of Sdm. Kulvir Kaur & S. Shingara Singh Bedi)\n\n✨ Sacred Anand Karaj: 22 November 2026\n📍 Gurudwara Sahib Gosayiana, Patshahi Dasvi Pathrala\n🏰 Grand Palace Reception: Gill Resorts Jassi Bagwali\n\nRSVP: Rajinder Purba (${coupleDetails.hostContact.phone})`;
+    const text = `🌸 Royal Sikh Wedding Invitation 🌸\n\nSurinder Singh Purba\n(Son of Sdn. Tarsem Kaur & S. Balwinder Singh Purba)\nWeds\nHarpreet Kaur Bedi\n(Daughter of Sdn. Kulvir Kaur & S. Shingara Singh Bedi)\n\n✨ Sacred Anand Karaj: 22 November 2026\n📍 Gurudwara Sahib Gosayiana, Patshahi Dasvi Pathrala\n🏰 Grand Palace Reception: Gill Resorts Jassi Bagwali\n\nRSVP: Rajinder Purba (${coupleDetails.hostContact.phone})`;
 
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text);
@@ -55,7 +55,7 @@ export const SacredInvitation: React.FC = () => {
               Surinder Singh
             </h3>
             <p className="font-serif italic text-base sm:text-lg text-[#c9a227] font-medium">
-            Late S. Balwinder Singh Purba &amp;  Son of Sdm. Tarsem Kaur  
+            Son of Sdn. Tarsem Kaur  &amp; Late S. Balwinder Singh Purba 
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export const SacredInvitation: React.FC = () => {
               Harpreet Kaur
             </h3>
             <p className="font-serif italic text-base sm:text-lg text-[#c9a227] font-medium">
-              Daughter of Sdm. Kulvir Kaur &amp; S. Shingara Singh Bedi
+              Daughter of Sdn. Kulvir Kaur &amp; S. Shingara Singh Bedi
             </p>
           </div>
         </div>
